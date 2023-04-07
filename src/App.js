@@ -22,11 +22,11 @@ function App() {
       2 + 3 = {addFunction(2, 3)}
       <br />
       <br />
-      [[1, 2], [3, 4]] @ [[5, 6], [7, 8]] ={' '}
+      [[1.5, 2], [3, 4]] @ [[5, 6], [7, 8]] ={' '}
       {JSON.stringify(
         matrixMultiplyFunction(
           [
-            [1, 2],
+            [1.5, 2],
             [3, 4],
           ],
           [
