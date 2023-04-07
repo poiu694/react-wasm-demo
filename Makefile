@@ -4,7 +4,6 @@ SRCDIR = src/bin
 SRCS = $(SRCDIR)/$(MODULE).c
 JSEXT = mjs
 
-.PHONY: all
 all: public/$(MODULE).wasm
 
 public/$(MODULE).wasm: $(SRCDIR)/$(MODULE).$(JSEXT)
@@ -25,4 +24,5 @@ $(SRCDIR)/$(MODULE).$(JSEXT): $(SRCS)
 clean:
 	rm public/$(MODULE).wasm $(SRCDIR)/$(MODULE).$(JSEXT)
 
+.PHONY: re
 re: clean all
